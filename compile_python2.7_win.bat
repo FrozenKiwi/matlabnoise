@@ -1,5 +1,5 @@
+SETLOCAL
 @echo off
-
 REM A simple batch script to compile on windows
 REM Assumes that SWIG & Python are on the path, 
 REM and that this is an appropriate VS command prompt
@@ -34,3 +34,5 @@ cl /O2 /Ot /Ox  /EHs /LD /D__WIN32__ /fp:precise /Zi /I%PYTHON_ROOT%\include vec
 echo -- Add done! --
 
 :EOF
+
+ENDLOCAL
